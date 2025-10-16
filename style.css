@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color: #b0b0b0;
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: rgb(43, 159, 163);
+}
+p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border: 2px solid rgb(198, 198, 198);
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: #111;
+}
+.btn:hover {
+    background: #4da6ff;
+    color: #2c2c2c;
+    transform: scale(1.05);
+}
+.project-card {
+    background: #111;
+    padding: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.project-card a {
+    background: rgb(24, 24, 24);
+    padding: 15px;
+    text-decoration: none;
+}
+.avatar img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* круглая форма */
+    border: 4px solid #252525; /* синяя рамка */
+    transition: transform 0.3s, ease 0.9s;  /* плавное движение и смена рамки */
+    box-shadow: 0 0 15px rgba(20, 203, 216, 0.5)
+
+}
+.avatar img:hover {
+    transform: scale(1.1); /* эффект при наведении */
+    border-color: #4da6ff; /* рамка меняет цвет при наведении */
+    box-shadow: 0 0 25px
+    rgba(0, 234, 255, 0.7);
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #0a0a0a; /*пример фона*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+    height: 100%;
+}
+.profile {
+    text-align: center;
+     /* текст под аватаркой по центру */ 
+    text-align: center;
+}
+.avatar {
+    width: 150px; /* размер аватарки */
+    height: 150px; /* размер аватарки */
+    border-radius: 50%; /* круглая форма */
+    transition: transform 0.3s ease;  /* плавное движение и смена рамки */
+}
+.avatar:hover {
+    transform: scale(1.1); /* эффект при наведении */
+}
+.nickname {
+    font-size: 20px; /* размер шрифта */
+    margin-top: 10px; /* отступ сверху */
+    color: #fff; /* цвет текста */
+}
+.footer-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; /* высота полосы */
+    background: rgba(0, 0, 0, 0.8);
+     height: 50px;
+    background: linear-gradient(90deg, #111, #1b1b1b, #111);
+    background-size: 200% 100%;
+    animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: -200% 0%; }
+}
+.nickname {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02);}
+}
+h1, p, h2, a {animation: pulse 10s infinite;}
