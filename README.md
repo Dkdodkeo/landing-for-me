@@ -1,6 +1,6 @@
 🧑‍💻 Personal Landing Page Demo
 
-Live demo: https://yourusername.github.io/personal-landing/
+Live demo: https://dkdodkeo.github.io/me/
 
 Author: Dkdodkeo
 
