@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(11, 11, 11);
+    color: #b0b0b0;
+    font-family: 'inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: rgb(49, 163, 43);
+    animation:pulse 5s infinite;
+}
+p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    border: 2px solid rgb(198, 198, 198);
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: #111;
+}
+.btn:hover {
+    background: #1c9700;
+    color: #2c2c2c;
+    transform: scale(1.05);
+}
+.project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; /* круглая форма */
+    border: 2px solid #252525; /* синяя рамка */
+    transition: transform 0.3s, box-shadow 0.9s ease;  /* плавное движение и смена рамки */
+    box-shadow: 0 0 15px rgba(76, 216, 20, 0.5);
+    margin-right: 20px;
+    
+}
+
+.avatar img:hover {
+    transform: scale(1.1); /* эффект при наведении */
+    border-color: #0a6f0f; /* рамка меняет цвет при наведении */
+    box-shadow: 0 0 25px
+    rgba(0, 255, 0, 0.7);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+    height: 100%;
+}
+.profile {
+    text-align: center;
+    max-width: 400px;
+}
+
+
+.nickname {
+    font-size: 20px; /* размер шрифта */
+    margin-top: 10px; /* отступ сверху */
+    color: #fff; /* цвет текста */
+}
+.footer-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px; /* высота полосы */
+    background: linear-gradient(90deg, #111, #1b1b1b, #111);
+    background-size: 200% 100%;
+    animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: -200% 0%; }
+}
+.nickname {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02);}
+    
+}
