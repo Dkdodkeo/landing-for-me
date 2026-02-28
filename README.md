@@ -1,5 +1,5 @@
 # About Me Website
-web:
+web: :https://dkdodkeo.github.io/landing-for-me/
 This is a simple personal portfolio / "About Me" website built with **HTML** and **CSS**.  
 It showcases my profile, avatar, nickname, and links to projects.
 
